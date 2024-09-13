@@ -6,6 +6,7 @@ This is a simple, small, and multi-arch Docker image of Nginx with basic authent
 
 ```sh
 docker run \
+    -p 8080:80 \
     -e BASIC_AUTH_USERNAME=your_username \
     -e BASIC_AUTH_PASSWORD=your_password \
     -v ./your/www/dir:/usr/share/nginx/html \
